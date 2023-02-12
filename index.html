@@ -11,48 +11,54 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body>
     <div class="container">
-        <div class="weather">
-            <form action="" class="form-group form">
-                <input type="text" id="user" class="box" placeholder="Enter city name here...."  >
-                <button type="button" id="search" class="btn btn-success ">Search</button>
-                <button type="button" id="current" class="btn btn-info">Current</button>
-            </form>
-            <div class="row">
-                <div class="col-12">
-                    <h1 id="place">Please enter the city name..!!</h1>
-                    <h6>
-                        <span>Last Updated on </span>
-                        <span id="date">3</span>
-                        <span id="month"></span>
-                    <span id="day">Saturday </span><span>,   </span>
-                    <span id="hours">21</span><span>:</span>
-                    <span id="minutes">21</span><span>:</span>
-                    <span id="seconds">21</span>
-                    </h6>
-                    <h6 id="des">Partly Cloudy</h6>
+        <div class="weather-app">
+            <div class="weather">
+                <form action="" class="form-group form">
+                    <input type="text" id="user" class="box" placeholder="Enter city name here....">
+                    <button type="button" id="search" class="btn btn-success ">Search</button>
+                    <button type="button" id="current" class="btn btn-info">Current</button>
+                </form>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 id="place">Please enter the city name..!!</h1>
+                        <h6>
+                            <span>Last Updated on </span>
+                            <span id="date">3</span>
+                            <span id="month"></span>
+                            <span id="day">Saturday </span><span>, </span>
+                            <span id="hours">21</span><span>:</span>
+                            <span id="minutes">21</span><span>:</span>
+                            <span id="seconds">21</span>
+                        </h6>
+                        <h6 id="des">Partly Cloudy</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" id="icon">
+                        <span id="temperature"></span><span class="units"><a href="#" id="cel" class="active">°C</a> |
+                            <a href="#" id="fah">°F</a></span>
+
+                    </div>
+                    <div class="col-6 details">
+                        <p class="fore"><span>Presuure: </span><span id="pressure">N/A</span><span> hPa</span></p>
+                        <p class="fore"><span>Humidity: </span><span id="humidity">N/A</span><span> %</span></p>
+                        <p class="fore"><span>Wind: </span><span id="speed">N/A</span><span> m/s</span></p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" id="icon">
-                        <span id="temperature"></span
-                        ><span class="units"><a href="#" id="cel" class="active">°C</a> | <a href="#" id="fah" >°F</a></span>
-                    
-                </div>
-                <div class="col-6 details">
-                    <p class="fore"><span>Presuure: </span><span id="pressure">N/A</span><span> hPa</span></p>
-                    <p class="fore"><span>Humidity: </span><span id="humidity">N/A</span><span> %</span></p>
-                    <p class="fore"><span>Wind: </span><span id="speed">N/A</span><span> m/s</span></p>
-                </div>
-            </div>
+            <a href="https://github.com/PriyaPasumarthi/WeatherApp_Current" target="_blank" class="code">Open source-code
+            </a> by Priya
         </div>
-        <footer>
-            <a href="#">Open source-code </a> by Priya
-        </footer>
+
+        
+
+
     </div>
     <script src="src/script.js">
     </script>
